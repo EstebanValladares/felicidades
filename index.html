@@ -2,11 +2,14 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Formulario de Nombres</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Feliz cumpleaños mi amor</title>
+  <link rel="stylesheet" href="style.css"> <!-- tu CSS del formulario -->
+  <link rel="stylesheet" href="collage.css"> <!-- CSS del collage -->
 </head>
 <body>
-  <div class="form-container">
+
+  <!-- SECCIÓN FORMULARIO -->
+  <div id="form-section" class="form-container">
     <h1>Ingresa los nombres</h1>
     <form id="nameForm">
       <input type="text" id="name1" placeholder="Nombre de la primera persona">
@@ -15,6 +18,18 @@
     </form>
     <p id="error" class="error-message"></p>
   </div>
-  <script src="app.js"></script>
+
+  <!-- SECCIÓN COLLAGE -->
+  <div id="collage-section" style="display:none;">
+    <header>
+      <h1>Feliz cumpleaños mi amor ❤️</h1>
+    </header>
+    <main>
+      <div class="gallery" id="gallery"></div>
+    </main>
+  </div>
+
+  <script src="app.js"></script> <!-- validación formulario -->
+  <script src="collage.js"></script> <!-- collage -->
 </body>
 </html>
